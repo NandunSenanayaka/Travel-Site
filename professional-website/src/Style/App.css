@@ -1,0 +1,129 @@
+/* Hide scrollbar but keep scrolling */
+body {
+  overflow-y: scroll; /* Allows scrolling */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+body {
+  scrollbar-width: hide; /* Hide scrollbar in Firefox */
+}
+
+body {
+  -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+}
+
+/* Services.css */
+.hide-scrollbar {
+  overflow-y: hidden; /* Allow scrolling */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome, Safari, and Edge */
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+  -ms-overflow-style: hidden; /* Hide scrollbar in IE and Edge */
+}
+
+/* This will enable smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Define the animation */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Move the text up a bit */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0); /* Return to original position */
+  }
+}
+
+/* Apply the animation to the .hero h1 (Welcome text) */
+.hero h1 {
+  animation: fadeIn 1.5s ease-in-out; /* 1.5s duration with ease-in-out timing */
+}
+.hero p {
+  animation: fadeIn 1.5s ease-in-out; /* 1.5s duration with ease-in-out timing */
+}
+.hero a {
+  animation: fadeIn 1.5s ease-in-out; /* 1.5s duration with ease-in-out timing */
+}
+
+
+/* Responsive part 
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+  }
+} */
+
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.scroll-animate {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+

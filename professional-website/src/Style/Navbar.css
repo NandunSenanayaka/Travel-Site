@@ -1,0 +1,24 @@
+.navbar {
+    font-size: 1.1rem;
+    
+  }
+
+  
+  .nav-link {
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffcc00;
+  }
+  
+  /* Transparent Navbar with a blur effect */
+.transparent-navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background (50% opacity) */
+    backdrop-filter: blur(10px); /* Apply blur effect to the background */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 9999; /* Make sure it's above other elements */
+  }
+  
